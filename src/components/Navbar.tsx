@@ -70,7 +70,7 @@ export function Navbar() {
                 'text-slate-700 theme-dark:text-slate-200',
                 'hover:text-slate-900 theme-dark:hover:text-white',
                 // keep your hover background
-                'hover:bg-accent'
+                'hover:bg-accent', 'hover:cursor-pointer'
               )}
             >
               {item.name}
