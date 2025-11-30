@@ -8,8 +8,8 @@ interface Project {
   description: string;
   image: string;
   technologies: string[];
-  githubUrl: string;
-  liveUrl: string;
+  githubUrl?: string;
+  liveUrl?: string;
   featured: boolean;
 }
 
@@ -55,28 +55,32 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
         
         <div className="flex gap-2">
-          <Button size="sm" asChild>
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2"
-            >
-              <Github className="h-4 w-4" />
-              Code
-            </a>
-          </Button>
-          <Button variant="outline" size="sm" asChild>
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2"
-            >
-              <ExternalLink className="h-4 w-4" />
-              Live Demo
-            </a>
-          </Button>
+          {project.githubUrl && (
+            <Button size="sm" asChild>
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <Github className="h-4 w-4" />
+                Code
+              </a>
+            </Button>
+          )}
+          {project.liveUrl && (
+            <Button variant="outline" size="sm" asChild>
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
+                <ExternalLink className="h-4 w-4" />
+                Live Demo
+              </a>
+            </Button>
+          )}
         </div>
       </CardContent>
     </Card>
