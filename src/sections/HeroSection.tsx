@@ -9,7 +9,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-blue-50 to-indigo-100 theme-dark:from-gray-900 theme-dark:to-gray-800">
+    <section className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-blue-50 to-indigo-100 theme-dark:from-gray-900 theme-dark:to-gray-800 pt-25">
       <div className="px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -17,7 +17,7 @@ export function HeroSection() {
           transition={{ duration: 0.8 }}
           className='flex flex-col gap-4'
         >
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 theme-dark:text-white my-10">
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 theme-dark:text-white mb-5">
             Hi, I'm{' '}
             <span className="text-blue-600 theme-dark:text-blue-400">
               {portfolioConfig.name}
@@ -28,7 +28,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-2xl md:text-3xl font-medium text-gray-600 theme-dark:text-gray-300 my-12"
+            className="text-2xl md:text-3xl font-medium text-gray-600 theme-dark:text-gray-300 mb-3"
           >
             {portfolioConfig.title}
           </motion.h2>
@@ -37,7 +37,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-gray-600 theme-dark:text-gray-400 max-w-3xl mx-auto mb-20"
+            className="text-lg md:text-xl text-gray-600 theme-dark:text-gray-400 max-w-3xl mx-auto mb-5"
           >
             {portfolioConfig.bio}
           </motion.p>
@@ -46,7 +46,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-24"
+            className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-5"
           >
             <Button size="lg" className="flex items-center gap-2">
               <Mail className="h-5 w-5" />

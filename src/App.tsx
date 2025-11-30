@@ -11,7 +11,7 @@ import './App.css'
 function App() {
 
   return (
-    <div className="min-h-screen bg-background text-foreground px-6 sm:px-8 lg:px-12">
+    <div className="min-h-screen bg-background text-foreground">
       <Navbar />
       <main>
         <HeroSection />

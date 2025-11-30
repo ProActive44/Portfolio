@@ -4,10 +4,7 @@
 /* Custom class-based dark variant tied to theme-dark class */
 @custom-variant theme-dark (&:where(.theme-dark, .theme-dark *));
 
-
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 

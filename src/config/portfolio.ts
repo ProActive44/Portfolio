@@ -6,7 +6,7 @@ export const portfolioConfig = {
   // Personal Information
   name: "Prasad Mhaske",
   title: "Full Stack Developer",
-  bio: "Passionate Full Stack Developer with 2+ years of experience building modern web applications. Specialized in React, TypeScript, and creating exceptional user experiences.",
+  bio: "Full Stack Web Developer with 2+ years of experience. Proficient in React, Node.js, Express.js, MongoDB, and PostgreSQL. Expertise in building scalable, user-centric applications, designing efficient APIs, and crafting responsive UIs. Specialization in Enterprise Resource Management (ERM) systems, focusing on clean architecture and performance optimization. Strong collaborator with a foundation in TypeScript, Next.js, and system design.",
   email: "prasadmhaske2001@gmail.com",
   location: "Mumbai, India",
 
