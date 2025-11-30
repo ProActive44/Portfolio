@@ -95,7 +95,7 @@ export function Navbar() {
           {/* CTA Button - Desktop */}
           <Button
             size="sm"
-            className="hidden sm:inline-flex w-full rounded-full px-5 whitespace-nowrap text-slate-1000 theme-dark:text-slate-200"
+            className="hidden sm:inline-flex w-full rounded-full px-6 whitespace-nowrap text-slate-200"
             onClick={() => scrollToSection('#contact')}
           >
             Get in Touch
