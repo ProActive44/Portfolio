@@ -30,8 +30,8 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     
-    /* Ignore deprecations for now */
-    "ignoreDeprecations": "6.0"
+    /* Ignore deprecations */
+    "ignoreDeprecations": "5.4"
   },
   "include": ["src"]
 }

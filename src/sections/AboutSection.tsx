@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { SectionTitle } from '@/components/SectionTitle';
 import { portfolioConfig } from '@/config/portfolio';
+import profilePic from '@/assets/profie_pic_01.png';
 
 export function AboutSection() {
   return (
@@ -18,10 +19,12 @@ export function AboutSection() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="aspect-square bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl mb-8 flex items-center justify-center">
-              <div className="text-white text-6xl font-bold">
-                {portfolioConfig.name.split(' ').map(n => n[0]).join('')}
-              </div>
+            <div className="aspect-square rounded-2xl mb-4 overflow-hidden">
+              <img 
+                src={profilePic} 
+                alt={portfolioConfig.name}
+                className="w-full h-full object-cover"
+              />
             </div>
           </motion.div>
           

@@ -8,7 +8,7 @@ interface SectionTitleProps extends HTMLAttributes<HTMLDivElement> {
 
 export function SectionTitle({ title, subtitle, className, ...props }: SectionTitleProps) {
   return (
-    <div className={cn('flex flex-col items-center justify-center mb-12', className)} {...props}>
+    <div className={cn('flex flex-col items-center justify-center mb-5', className)} {...props}>
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900 theme-dark:text-white mb-4 text-center">
         {title}
       </h2>
